@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#EDEFFF">
+
+
+    <TextView
+        android:id="@+id/txtMojaNarudzba"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="155dp"
+        android:fontFamily="casual"
+        android:text="QR kod"
+        android:textAlignment="center"
+        android:textColor="#6E7498"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SurfaceView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_below="@+id/txtMojaNarudzba"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="187dp" />
+
+    <TextView
+        android:id="@+id/barCodeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="146dp"
+        android:background="#6E7498"
+        android:fontFamily="casual"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="------------------" />
+
+    <TextView
+        android:id="@+id/textViewOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="144dp"
+        android:background="#6E7498"
+        android:fontFamily="casual"
+        android:text="Kod:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonIskoristiQRkod"
+        android:layout_width="139dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="60dp"
+        android:background="#6E7498"
+        android:fontFamily="casual"
+        android:text="Ažuriraj bodove"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</RelativeLayout>

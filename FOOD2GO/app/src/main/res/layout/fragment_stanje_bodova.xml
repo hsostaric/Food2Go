@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEFFF"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/stanje_bodova2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stanje bodova"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
+
+    <Switch
+        android:id="@+id/nacinOstvarivanjaBodova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:checked="false"
+        android:textOff="PIN"
+        android:textOn="QRkod"/>
+
+    <TextView
+        android:id="@+id/broj_bodova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skupljajte bodove kako biste ostvarili vrijedne nagrade! Moguće nagrade možete vidjeti u kartici 'Nagrade'."
+        android:layout_centerHorizontal="true"
+        android:textAlignment="textStart"
+        android:layout_below="@id/broj_bodova"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/AzurirajBodoveVjernosti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/broj_bodova"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-226dp"
+        android:text="Ažuriraj Bodove"
+        android:textAlignment="textStart"></Button>
+
+</RelativeLayout>

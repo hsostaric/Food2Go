@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/kategorije"
+            android:title="@string/kategorije" />
+        <item
+            android:id="@+id/trenutna_narudzba"
+            android:title="@string/trenutna_narudzba" />
+        <item
+            android:id="@+id/moje_narudzbe"
+            android:title="@string/moje_narudzbe" />
+        <item
+            android:id="@+id/nagrade"
+            android:title="@string/nagrade" />
+        <item
+            android:id="@+id/stanje_bodova"
+            android:title="@string/stanje_bodova" />
+       
+    </group>
+
+    <item android:title="Ostalo">
+        <menu>
+            <item
+                android:id="@+id/postavke"
+                android:title="@string/postavke" />
+            <item
+                android:id="@+id/odjava"
+                android:title="@string/odjava" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="#EDEFFF"
+    android:id="@+id/nagrada_item_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popust"
+        android:text="5 % popusta na jednu narudžbu"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/potreban_broj_bodova"
+        android:layout_below="@id/popust"
+        android:text="Potrebno bodova: 10"
+        android:textColor="#777777"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>

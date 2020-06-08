@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEFFF"
+    tools:context=".fragmenti.nagrade.NagradeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nagrade2"
+            android:text="Nagrade"
+            android:textSize="60dp"
+            android:textColor="#6E7498"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nagrade_recyclerview"
+            android:layout_below="@id/nagrade2"
+            android:layout_marginTop="10dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nagrade_recyclerview"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#6E7498"
+            android:text="Zeleno označena nagrada je nagrada na koju imate pravo s obzirom na Vaš trenutni broj bodova. Broj bodova možete vidjeti na kartici 'Stanje bodova'."/>
+
+    </RelativeLayout>
+
+</ScrollView>

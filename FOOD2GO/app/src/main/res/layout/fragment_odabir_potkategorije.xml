@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEFFF"
+    tools:context=".fragmenti.odabir_potkategorije.OdabirPotkategorijeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artikl"
+            android:text="Artikl"
+            android:textSize="40dp"
+            android:textColor="#6E7498"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/artikl_slika"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/artikl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/artikl_slika"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artikl_opis"
+                android:text="Opis:"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textColor="#6E7498"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artikl_cijena2"
+                android:layout_below="@id/artikl_opis"
+                android:text="Cijena:"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:textColor="#6E7498"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/artikl_cijena2"
+                android:text="Količina:"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"
+                android:textColor="#6E7498"
+                />
+
+            <Button
+                android:id="@+id/gumb_plus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/artikl_cijena2"
+                android:layout_marginTop="80dp"
+                android:background="#6E7498"
+                android:text="+"
+                android:textSize="20dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/artikl_kolicina"
+                android:layout_below="@id/gumb_plus"
+                android:text="1"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                android:textColor="#6E7498"
+                android:layout_marginStart="40dp"
+                />
+
+            <Button
+                android:id="@+id/gumb_minus"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/artikl_kolicina"
+                android:layout_marginTop="5dp"
+                android:background="#6E7498"
+                android:text="-"
+                android:textSize="20dp"
+                android:layout_marginStart="30dp"
+                android:textColor="#FFFFFF"/>
+
+
+
+
+            <Button
+                android:id="@+id/gumb_dodaj_u_kosaricu"
+                android:layout_width="176dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="150dp"
+                android:layout_below="@id/artikl_cijena2"
+                android:layout_marginTop="150dp"
+                android:background="#6E7498"
+                android:text="Dodaj u košaricu"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

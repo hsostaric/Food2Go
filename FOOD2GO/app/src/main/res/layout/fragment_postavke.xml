@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/header_postavke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="casual"
+        android:text="Postavke"
+        android:textAlignment="center"
+        android:textColor="#6E7498"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_postavke">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Azuriranje bodova preko QR koda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/modulSwitch"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="111dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:checked="false"
+                app:layout_constraintTop_toTopOf="parent"></Switch>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Ime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_ime"
+                android:layout_width="249dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite svoje ime"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Prezime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_ime" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_prezime"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite svoje prezime"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Korisničko ime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_prezime" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_username"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite svoje korisničko Ime"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Email adresa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_username" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_email"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite svoj email"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Nova lozinka:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_username" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_lozinka"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite novu lozinku"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Ponovite lozinku:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_lozinka" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_ponovi_lozinku"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite novu lozinku:"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Broj mobitela:"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_ponovi_lozinku" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_mobitel"
+                android:layout_width="248dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite broj mobitela:"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="253dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="111dp"
+                android:ems="10"
+                android:text="Adresa :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_mobitel" />
+
+            <EditText
+                android:id="@+id/prijavljeni_korisnik_adresa"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="116dp"
+                android:ems="10"
+                android:hint="Unesite adresu"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <Button
+                android:id="@+id/uredi_korisnicke_postavke"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="33dp"
+                android:layout_marginEnd="116dp"
+                android:background="#6E7498"
+                android:text="Uredi korisnika"
+                android:textColor="#FFFF"
+                app:layout_constraintTop_toBottomOf="@+id/prijavljeni_korisnik_adresa" />
+            />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

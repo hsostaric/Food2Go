@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/kategorije">
+
+    <fragment
+        android:id="@+id/kategorije"
+        android:label="@string/app_name"
+        android:name="hr.foi.air.food2go.fragmenti.kategorije.KategorijeFragment"
+        tools:layout="@layout/fragment_kategorije" />
+    <fragment
+        android:id="@+id/trenutna_narudzba"
+        android:name="hr.foi.air.food2go.fragmenti.trenutna_narudzba.TrenutnaNarudzbaFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_trenutna_narudzba" />
+
+    <fragment
+        android:id="@+id/moje_narudzbe"
+        android:label="@string/menu_gallery"
+        android:name="hr.foi.air.food2go.fragmenti.moje_narudzbe.MojeNarudzbeFragment"
+        tools:layout="@layout/fragment_moje_narudzbe" />
+
+    <fragment
+        android:id="@+id/nagrade"
+        android:label="@string/menu_slideshow"
+        android:name="hr.foi.air.food2go.fragmenti.nagrade.NagradeFragment"
+        tools:layout="@layout/fragment_nagrade" />
+
+    <fragment
+        android:id="@+id/stanje_bodova"
+        android:label="@string/menu_tools"
+        android:name="hr.foi.air.food2go.fragmenti.stanje_bodova.StanjeBodovaFragment"
+        tools:layout="@layout/fragment_stanje_bodova" />
+
+    <fragment
+        android:id="@+id/postavke"
+        android:label="@string/menu_share"
+        android:name="hr.foi.air.food2go.fragmenti.postavke.PostavkeFragment"
+        tools:layout="@layout/fragment_postavke" />
+
+    <fragment
+        android:id="@+id/odjava"
+        android:label="@string/menu_share"
+        android:name="hr.foi.air.food2go.fragmenti.odjava.OdjavaFragment"
+        tools:layout="@layout/fragment_odjava" />
+
+
+</navigation>

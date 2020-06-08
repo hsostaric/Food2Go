@@ -1,0 +1,36 @@
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^dohvatiracunekorisnika/(.*)/$ rest.php?metoda=racunikorisnika&korisnikuser=$1 [nc,qsa]
+RewriteRule ^dohvatiRacunZaProvjeru/(.*)/(.*)/$ rest.php?metoda=dohvatiracunzaprovjeru&korisnikid=$1&kod=$2 [nc,qsa]
+RewriteRule ^korisnikracuni/(.*)/$  rest.php?metoda=korisniksviracuni&user=$1 [nc,qsa]
+RewriteRule ^popis/svi/$ rest.php?korisnici=svi [nc,qsa]
+RewriteRule ^prijava/(.*)/(.*)/$ rest.php?username=$1&password=$2 [nc,qsa]
+RewriteRule ^registracija/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/$ rest.php?metoda=reg&ime=$1&prezime=$2&korisnickoime=$3&lozinka=$4&oib=$5&email=$6&adresa=$7&brojmobitela=$8&aktivacijski=$9 [nc,qsa]
+RewriteRule ^aktivacijakoda/(.*)/(.*)/$  rest.php?metoda=kod&email=$1&aktivacijski=$2 [nc,qsa]
+RewriteRule ^zaboravljenalozinka/(.*)/(.*)/$ rest.php?metoda=zaboravljena&email=$1&username=$2 [nc,qsa]
+RewriteRule ^blokiranjeKorisnika/(.*)/(.*)/$ rest.php?metoda=blokiraj&username=$1&blokiraj=$2 [nc,qsa]
+RewriteRule ^mojenarudzbe/(.*)/$ rest.php?metoda=narudbe&username=$1 [nc,qsa]
+RewriteRule ^kategorije/$ rest.php?metoda=kategorije&kategorije=sve [nc,qsa]
+RewriteRule ^artikli/(.*)/$ rest.php?metoda=artikli&kategorije=$1 [nc,qsa]
+RewriteRule ^kolicinaartikla/(.*)/$ rest.php?metoda=kolicinaartikla&idartikla=$1 [nc,qsa]
+RewriteRule ^racun/(.*)/$ rest.php?metoda=racun&tip=novi&korisnikid=$1 [nc,qsa]
+RewriteRule ^dodajartiklnarduzbi/(.*)/$ rest.php?metoda=dodajnarudbi&artiklid=$1 [nc,qsa]
+RewriteRule ^dohvatinagradu/(.*)/$ rest.php?metoda=dohvatibodove&userid=$1 [nc,qsa]
+RewriteRule ^iskoristibodove/(.*)/(.*)/(.*)/$ rest.php?metoda=iskoristibodove&userid=$1&iskoristenibodovi=$2&nagradaid=$3 [nc,qsa]
+RewriteRule ^dohvatitrenutnebodove/(.*)/$ rest.php?metoda=dohvatitrenutnebodove&userid=$1 [nc,qsa]
+RewriteRule ^dohvatisvenagrade/$ rest.php?metoda=dohvatisvenagrade [nc,qsa]
+RewriteRule ^azurirajKorisnika/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/(.*)/$ rest.php?metoda=azurirajKorisnika&ime=$1&prezime=$2&username=$3&adresa=$4&lozinka=$5&mobitel=$6&id=$7&email=$8 [nc,qsa]
+RewriteRule ^dodajstavkeracuna/(.*)/(.*)/(.*)/$ rest.php?metoda=dodajstavkeracuna&artiklid=$1&racunid=$2&kolicina=$3 [nc,qsa]
+RewriteRule ^dohvatiartikleracuna/(.*)/$ rest.php?metoda=artikliracuna&racunid=$1 [nc,qsa]
+RewriteRule ^dodajpovratnu/(.*)/(.*)/(.*)/$ rest.php?metoda=dodajpovratnu&racunid=$1&komentar=$2&ocjena=$3 [nc,qsa]
+RewriteRule ^dodajcijenunaracun/(.*)/(.*)/$ rest.php?metoda=dodajcijenuracunu&racunid=$1&cijena=$2 [nc,qsa]
+RewriteRule ^slanjeracuna/(.*)/$ rest.php?metoda=slanjeracuna&racunid=$1 [nc,qsa]
+
+
+
